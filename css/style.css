@@ -77,10 +77,10 @@ main {
 
 /* Right: biography */
 .bio {
-    max-width: 650px;
+    max-width: 600px;
     text-align: left;
-    font-size: 19px;
-    line-height: 1.9;
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 .bio p {
