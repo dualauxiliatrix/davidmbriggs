@@ -24,17 +24,23 @@ main {
 
 /* Navigation */
 
+/* Navigation */
+
+nav {
+    margin-top: 10px;
+}
+
 nav a {
     position: relative;
     display: inline-block;
-    margin: 8px;
-    padding: 10px 18px;
+    margin: 0 14px;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
-/* subtle underline animation */
+/* animated underline */
 
 nav a::after {
     content: "";
