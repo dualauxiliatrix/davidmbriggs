@@ -141,6 +141,11 @@ header h1 a:hover {
     color: white;
 }
 
+body.book-background {
+    background-color: black;
+    color: white;
+}
+
 /* left side book cover */
 
 .book-left img {
