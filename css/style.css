@@ -1,3 +1,5 @@
+/* Global styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,27 +17,44 @@ h1 {
     margin: 0 0 20px 0;
 }
 
-nav a {
-    display: inline-block;
-    margin: 8px;
-    padding: 10px 18px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.2s ease;
-}
-
-nav a:hover {
-    background-color: #ddd;
-}
-
 main {
     padding: 40px 20px;
 }
 
+
+/* Navigation */
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* subtle underline animation */
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+
 /* About page layout */
+
 .about-container {
     display: flex;
     justify-content: center;
@@ -45,6 +64,7 @@ main {
 }
 
 /* Left: social links */
+
 .social-links {
     display: flex;
     flex-direction: column;
@@ -68,6 +88,7 @@ main {
 }
 
 /* Center: author photo */
+
 .author-photo img {
     max-width: 400px;
     width: 100%;
@@ -76,19 +97,118 @@ main {
 }
 
 /* Right: biography */
+
 .bio {
     max-width: 600px;
     text-align: left;
-    font-size: 17px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .bio p {
     margin-bottom: 20px;
 }
 
-/* Make layout wrap on smaller screens */
+
+
+/* ----------------------------- */
+/* Halberd Books Vol.1 page */
+/* ----------------------------- */
+
+.book-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px;
+    color: white;
+}
+
+/* left side book cover */
+
+.book-left img {
+    width: 420px;
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* subtle hover polish */
+
+.book-left img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* right side content */
+
+.book-right {
+    max-width: 520px;
+    text-align: left;
+}
+
+/* links */
+
+.book-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.book-links a {
+    color: white;
+    text-decoration: underline;
+}
+
+.book-links a:hover {
+    opacity: 0.7;
+}
+
+/* description */
+
+.book-description {
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+/* contents list */
+
+.book-list {
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.book-list li {
+    margin-bottom: 8px;
+}
+
+/* quotes */
+
+blockquote {
+    margin-top: 30px;
+    font-style: italic;
+    color: #ddd;
+}
+
+/* subtle fade-in animation */
+
+.book-left img {
+    animation: fadein 0.8s ease;
+}
+
+@keyframes fadein {
+    from {opacity:0; transform:translateY(10px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+/* Mobile layout */
+
 @media (max-width: 900px) {
+
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -105,28 +225,20 @@ main {
     .bio {
         text-align: center;
     }
-    nav a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    margin: 0 12px;
-    font-weight: bold;
-}
 
-/* underline element */
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 2px;
-    background-color: white;
-    transition: width 0.25s ease;
-}
+    .book-page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-/* hover animation */
-nav a:hover::after {
-    width: 100%;
-}
+    .book-right {
+        text-align: center;
+    }
+
+    .book-left img {
+        width: 80%;
+        max-width: 350px;
+    }
+
 }
