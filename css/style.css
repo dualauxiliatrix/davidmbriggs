@@ -124,11 +124,76 @@ header h1 a:hover {
     margin-bottom: 20px;
 }
 
+/* HOME PAGE */
 
+.home-page {
+    background-color: #e5e5e5;
+    padding: 60px 80px;
+}
 
-/* ----------------------------- */
+/* top grid */
+
+.home-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 50px;
+    align-items: start;
+}
+
+/* big title */
+
+.home-title h2 {
+    font-size: 80px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+/* book image */
+
+.home-image img {
+    width: 100%;
+    max-width: 520px;
+}
+
+/* bio text */
+
+.home-bio {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* books section */
+
+.books-section {
+    margin-top: 80px;
+}
+
+.books-section h2 {
+    margin-bottom: 30px;
+}
+
+/* columns */
+
+.books-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+/* book links */
+
+.books-columns a {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.books-columns a:hover {
+    text-decoration: underline;
+}
+
 /* Halberd Books Vol.1 page */
-/* ----------------------------- */
 
 .book-page {
     display: flex;
