@@ -218,6 +218,26 @@ header h1 a:hover {
 .books-columns h4{
     margin-top:20px;
 }
+/* Paragraph spacing polish */
+
+.home-page p{
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* tighten the title description slightly */
+
+.home-title p{
+    margin-top: 18px;
+}
+
+/* keep the author bio paragraphs evenly spaced */
+
+.home-bio p{
+    margin-bottom: 16px;
+}
+
 
 
 /* Halberd Books Vol.1 page */
