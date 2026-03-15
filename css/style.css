@@ -21,9 +21,6 @@ main {
     padding: 40px 20px;
 }
 
-
-/* Navigation */
-
 /* Navigation */
 
 nav {
@@ -124,9 +121,7 @@ header h1 a:hover {
     margin-bottom: 20px;
 }
 
-/* ----------------------------- */
-/* HOME PAGE */
-/* ----------------------------- */
+/* Home page */
 
 .home-page{
     background:#e5e5e5;
@@ -336,6 +331,52 @@ blockquote {
     from {opacity:0; transform:translateY(10px);}
     to {opacity:1; transform:translateY(0);}
 }
+
+/* Rainbow Joy Page */
+
+.book-right h1{
+    font-family:'Oswald', sans-serif;
+    font-size:48px;
+    margin-bottom:30px;
+}
+
+.book-description{
+    max-width:360px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.contributors-title{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.contributors{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.contributors li{
+    margin-bottom:8px;
+}
+
+/* buy link under cover */
+
+.buy-link{
+    margin-top:12px;
+    text-align:center;
+}
+
+.buy-link a{
+    color:black;
+    text-decoration:underline;
+}
+
+.buy-link a:hover{
+    opacity:0.7;
+}
+
 
 /* Mobile layout */
 
