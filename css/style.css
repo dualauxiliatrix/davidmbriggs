@@ -176,6 +176,10 @@ header h1 a:hover {
 
 /* Chapbooks list on homepage */
 
+.chapbooks{
+    grid-column: 2;
+}
+
 .chapbooks {
     margin-top: 10px;
 }
@@ -194,6 +198,7 @@ header h1 a:hover {
 .chapbooks a:hover {
     text-decoration: underline;
 }
+
 
 /* Paragraph spacing polish */
 
