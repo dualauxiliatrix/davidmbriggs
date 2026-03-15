@@ -248,6 +248,12 @@ header h1 a:hover {
     color: white;
 }
 
+/* Rainbow Joy override */
+
+body:not(.book-background) .book-page {
+    color: black;
+}
+
 body.book-background {
     background-color: black;
     color: white;
@@ -264,10 +270,12 @@ body.book-background {
 
 /* subtle hover polish */
 
+/*
 .book-left img:hover {
     transform: scale(1.03);
     box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-}
+} 
+*/
 
 /* right side content */
 
@@ -376,6 +384,7 @@ blockquote {
 .buy-link a:hover{
     opacity:0.7;
 }
+
 
 
 /* Mobile layout */
